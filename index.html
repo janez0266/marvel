@@ -5,61 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heroes de Marvel</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
     <link rel="stylesheet" href="style_intro.css">
 </head>
 <body>
-
-    <nav>
-           
-    <ul class="nav-menu">
-        <li>
-            <a href="#">Imágenes </a>
-        </li>
-        <li>
-            <a href="#">Historias </a>
-        </li>
-        <li>
-            <a href="#">Personajes </a>
-        </li>
-        <li>
-            <a href="#">Acerca de </a>
-        </li>
-
-        <li>
-            <a href="#">Mas >>></a>
-        </li>
-    </ul>
-    <ul class="nav-menu-right">
-        <li>
-            <a href="#">
-                <i class="fas fa-search"></i>
-            </a>
-        </li>
-    </ul>
-    </nav>
-    <section>
-    <div class="titulo">
-        <b><i><h1>MARVEL's Landing Page</h1></i></b>
-    </div>
-    <div class="central">
-        <div>
-            <a href="http://marvel.com" target="_blank"><img src="img/logo_marvel_comics2.png" alt="logo" class="img_central" draggable="true" title="Ver página principal de MARVEL"></a>
-      
-
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi eligendi recusandae quos ab, iure esse sunt incidunt adipisci at laudantium nulla, ex unde cum suscipit soluta sed! Deserunt, quibusdam id.</p>
-            <p draggable="true" title="Ver más contenido sobre MARVEL">
-                <b><a href="https://marvel.fandom.com/es/wiki/Categor%C3%ADa:Personajes" class="btn" target="_blank">Leer mas >> </a></b>
-            </p>
+    <header>  <!--    ENCABEZADO    -->
+        <nav>           
+        <ul class="nav-menu">
+            <li>
+                <a href="#">Imágenes</a>
+            </li>
+            <li>
+                <a href="#">Historias</a>
+            </li>
+            <li>
+                <a href="#">Personajes</a>
+            </li>
+            <li>
+                <a href="#">Acerca de</a>
+            </li>
+            <li>
+                <a href="#">Mas >>></a>
+            </li>
+        </ul>
+        </nav>
+    </header>
+    <section>  <!--    CUERPO   -->
+        <div class="titulo">
+            <b><i><h1 class="font-effect-fire">MARVEL's Landing Page</h1></i></b>
         </div>
-        <div>
+        <div class="central">            
+            <a href="http://marvel.com" target="_blank">
+                <img class="img_central" src="img/logo_marvel_comics2.png" alt="logo" draggable="true" title="Ver página principal de MARVEL">
+            </a>
+            <p onclick="alert('TODAVIA NO ESTA LISTO!!!!')">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi eligendi recusandae quos ab, iure esse sunt incidunt adipisci at laudantium nulla, ex unde cum suscipit soluta sed! Deserunt, quibusdam id.</p>
+            <p title="Ver más contenido sobre MARVEL">
+            <b><a href="https://marvel.fandom.com/es/wiki/Categor%C3%ADa:Personajes" class="btn" target="_blank">Leer mas >> </a></b></p>
+            <!--  imagenes en movimiento   -->
             <img class="ironman" src="img/ironman3.png" alt="">
-        </div> 
-        <div>
-            <img class="capi" src="img/cap_america3.png" alt="">
-        </div> 
-    </div>
-
+            <img class="capi" src="img/cap_america3.png" alt="">            
+        </div>
     </section>
+
     <footer>
         <p>LenioBootcamp 2021</p>
     </footer>
