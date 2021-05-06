@@ -1,0 +1,99 @@
+
+section{
+    margin-bottom: 40px;
+}
+.login_img {
+    /* The image used */
+    background-image: url("https://guiasdevideojuegos.com/wp-content/uploads/2020/02/19-1024x576.jpg");  
+    min-height: 600px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   
+    
+  }
+  
+  /* Add styles to the form container */
+  .login {
+    position: absolute;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    right: 0;
+    margin: 150px 20px 0 0;
+    max-width: 300px;
+    padding: 16px;
+    color: cyan;
+   
+  }
+  .login_txt {
+    position: absolute;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.7); /* Black background with 0.5 opacity */
+    left: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    color: cyan;
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+  }
+  
+  .btn:hover {
+    opacity: .5;
+  }ocus {
+    background-color: #ddd;
+    outline: none;
+
+  }
+  
+  /* Set a style for the submit button */
+  .btn {
+    background-color: cyan;
+    color: #01232e;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: .5;
+  }
+
+  .btn_back {
+    cursor: pointer;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    color: cyan;
+    border: 1px solid cyan;
+    margin: 0 0 10px 0;
+}
+.btn_back:hover {
+  opacity: .7;
+  background-color: rgb(222, 226, 4);
+  color: black;
+}
+
+  .registro_img {
+    /* The image used */
+    background-image: url("https://i.ytimg.com/vi/3CpY0dmgf9s/maxresdefault.jpg");  
+    min-height: 600px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+  }

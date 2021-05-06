@@ -4,65 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heroes de Marvel</title>
+    <title>LenioBootcamp - Heroes de Marvel</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style_slides.css">
     <link rel="stylesheet" href="style_intro.css">
 </head>
+
 <body>
     <header>  <!--    ENCABEZADO     -->
         <nav>           
-        <ul class="nav-menu">
-            <li>
-                <a href="#">Imágenes</a>
-            </li>
-            <li>
-                <a href="#">Historias</a>
-            </li>
-            <li>
-                <a href="#">Personajes</a>
-            </li>
-            <li>
-                <a href="#">Acerca de</a>
-            </li>
-            <li>
-                <a href="#">Mas >>></a>
-            </li>
-        </ul>
+            <ul>                
+                <li>
+                    <a href="#">Historias</a>
+                </li>          
+                <li class="dropdown">                
+                    <button class="dropbtn">Multimedia >></button>
+                    <div class="dropdown-content">
+                      <a href="galeria.html">Galeria</a>
+                      <a href="videos.html">Videos</a>
+                      <a href="#">Juegos</a>
+                      <a href="comics.html">Cómics</a>                      
+                    </div>                  
+                </li>
+                <li class="dropdown">                
+                    <button class="dropbtn">Personajes >></button>
+                    <div class="dropdown-content">
+                      <a href="login.html">Ironman</a>
+                      <a href="login.html#nueva">Capitán América</a>
+                      <a href="acercade.html">Falcon</a>
+                      <a href="comentario.html">Hulk</a>
+                      <a href="subscribe.html">Thor</a>
+                    </div>                  
+                </li>                
+                <li class="dropdown">                
+                    <button class="dropbtn">MAS >>></button>
+                    <div class="dropdown-content">
+                      <a href="login.html">Iniciar Sesion</a>
+                      <a href="login.html#nueva">Regístrese</a>
+                      <a href="acercade.html">Acerca de</a>
+                      <a href="comentario.html">Envia tu comentario</a<li>
+                        <a href="subscribe.html">Subscribete </a>
+                </li>
+            </ul>
         </nav>
     </header>
-    <section>  <!--    CUERPO   -->
+
+     <!--    CUERPO   -->
+    <section> 
         <div class="titulo">
             <b><i><h1 class="font-effect-fire">MARVEL's Landing Page</h1></i></b>
         </div>
         <article class="central">   
-            <figure>
-                <a href="http://marvel.com" target="_blank"></a>
-                    <img class="img_central" src="img/logo_marvel_comics2.png" alt="logo" draggable="true" title="Ver página principal de MARVEL">
-                    <figcaption>Marvelś Comics</figcaption>
-                </a>
-            </figure>
-
-            <p onclick="alert('TODAVIA NO ESTA LISTO!!!!')">Si eres fan de los personajes y las películas de MARVEL, este es el lugar correcto para visitar. Podras ver mucha informacion e imágenes de tu personaje favorito... </p>
-            <details>
-                <summary>Proyecto Lenio Bootcamp</summary>
-                <p>Este proyecto nace con la idea de aplicar los conocimientos adquiridos en el Lenio Bootcamp sobre programacion frontend. Aqui aplicaremos conocimientos de HTML, CSS, Javascript y React. Se utilizaran animaciones CSS y se alicará un Responsive Design.</p>
-            </details>
-            <p title="Ver más contenido sobre MARVEL">
-                <b><a href="https://marvel.fandom.com/es/wiki/Categor%C3%ADa:Personajes" class="btn" target="_blank">Leer mas >> </a></b>
-            </p>
+            <div class="slideshow-container">
+                <div class="mySlides fade">      
+                    <img src="img/logo_marvel_comics2.png" style="width:100%">      
+                </div>    
+                <div class="mySlides fade">      
+                    <img src="img/ironman4.png" style="width:55%">      
+                </div>    
+                <div class="mySlides fade">     
+                    <img src="img/cap_america3.png" style="width:80%">    
+                </div>    
+                <div class="mySlides fade">     
+                    <img src="img/hulk2.png" style="width:40%">    
+                </div> 
+            </div>
+            <br>
+    
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+        
             
             <!--  imagenes en movimiento   -->
             <figure>
-                <img class="ironman" src="img/ironman3.png" alt="">
-            <img class="capi" src="img/cap_america3.png" alt="">   
-            </figure>         
+                <img class="ironman" src="img/ironman3.png" alt="Ironman">
+                <img class="capi" src="img/cap_america3.png" alt="Capitan america">   
+            </figure>     
+                
         </article>
+    </section>
+
+    <section class="info">
+        <details>
+             <summary>Proyecto Lenio Bootcamp</summary>
+            <p onclick="alert('TODAVIA NO ESTA LISTO!!!!')">   Si eres fan de los personajes y las películas de MARVEL, este es el lugar correcto para visitar. Podras ver mucha informacion e imágenes de tu personaje favorito...</p>
+           
+            <p>Este proyecto nace con la idea de aplicar los conocimientos adquiridos en el Lenio Bootcamp sobre programacion frontend. Aqui aplicaremos conocimientos de HTML, CSS, Javascript y React. Se utilizaran animaciones CSS y se alicará un Responsive Design.</p>
+        </details>
     </section>
 
     <footer>
         <p>Lenio Bootcamp 2021</p>
-    </footer>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
 
+    </footer>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
 
 </body>
 
