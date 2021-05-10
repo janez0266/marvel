@@ -24,14 +24,19 @@
                 <h2>Inicia sesión con tu cuenta</h2>
             </div>
             
-            <form action="/action_page.php" class="login">
+            <form  class="login">
                 <h1>Login</h1>
 
                 <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
+                <input id="email" type="text" placeholder="Enter Email" name="email" required>
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-                <button type="submit" class="btn">Login</button>
+                <input id="paswd"type="password" placeholder="Enter Password" name="psw" required>
+                <label for="fecha" onclick="this.innerHTML=Date()"><b>Fecha</b></label>
+                <input id="fecha"type="text" placeholder="click para fecha" name="fecha" >
+                <!-- <button type="submit" class="btn">Login</button> -->
+                <button type="button" class="btn" onclick="login()">Login</button>
+                <p id="result"  style="color: white;">Se muestra el resultado </p>
+              
             </form>
         </div>
     </section>
@@ -52,13 +57,21 @@
                 <input type="text" placeholder="Enter Email" name="email" required>
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" required>
+
                 <button type="submit" class="btn">Crear cuenta</button>
             </form>
         </div>
 
     </section>
 
-
+    <script>
+        function login() {
+            var email = document.getElementById("email").value;
+            var passwd = document.getElementById("paswd").value;
+            //alert(email);
+            document.getElementById("result").innerHTML=email + " " + passwd;
+        }
+    </script>
 
 </body>
 </html>

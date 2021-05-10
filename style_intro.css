@@ -1,17 +1,32 @@
 
 body {
-    background-color: #01232e;
+   
+    background-image: url("img/marvel_heroes2.jpg");
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     color: cyan;
-    align-items: center;
+    
     text-align: center;
+    width: 70%;
+    padding-left: 15%;
+   /* width: 1000px;*/
+
+  
+ 
+  
 }
+
+
 /*    ENCABEZADO     */
 nav {
     background: url(img/banner_marvel.png) no-repeat center/cover;
     background-position: top;
-    
+    width: 100%;
+    display: flex;
+    justify-content: center;
     padding-top: 5%;
     
 }
@@ -65,6 +80,13 @@ li button:hover, li a:hover {
 
 
 /*    CUERPO   */
+.contenedor {
+    background-color: #01232e;
+    opacity: 0.9;
+}
+.slideshow-container {
+    height: 400px;
+}
 section {
     color: yellow;
     margin: 20px;
@@ -128,15 +150,24 @@ section {
     border: 1px solid cyan;
     height: auto;
 }
+footer {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+}
 footer a{
     color: cyan;
-    padding: 20px;
+    padding: 10px;
   font-size: 30px;
   width: 20px;
  
   text-decoration: none;
-  
+ 
 
+}
+footer img {
+    width: 10%;
 }
 @media (max-width: 900px){
     body {
@@ -149,6 +180,9 @@ footer a{
     li a, li button{
       
         font-size: 12px;   
+    }
+    .slideshow-container {
+        height: 250px;
     }
   
 }
@@ -166,6 +200,9 @@ footer a{
     .img_central {
         width: 80%;
        padding: 5px;
+    }
+    .slideshow-container {
+        height: 150px;
     }
   
 }
